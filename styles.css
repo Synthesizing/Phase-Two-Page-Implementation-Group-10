@@ -1,0 +1,137 @@
+/* Base styles */
+body {
+    font-family: 'system-ui', -apple-system, sans-serif;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+.header-box {
+    background: linear-gradient(135deg, #2f855a, #38a169);
+    color: white;
+    padding: 4rem 0;
+}
+
+.header-title {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.nav-link {
+    color: white;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Add border */
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background */
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.5); /* Brighter border on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.section-title {
+    position: relative;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #38a169; 
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+.content-box {
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.info-card {
+    background: #f0fff4; 
+    border-left: 4px solid #38a169;
+}
+
+.stats-box {
+    background: rgba(56, 161, 105, 0.1); 
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.action-box {
+    background: #f7fafc;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #38a169; 
+    border-color: #38a169;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2f855a; 
+    border-color: #2f855a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-box {
+    background: #2f855a; 
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2.5rem;
+    }
+    
+    .section {
+        padding: 2.5rem 0;
+    }
+    
+    .content-box {
+        margin-bottom: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+    
+    .btn-primary {
+        width: 100%;
+    }
+}
